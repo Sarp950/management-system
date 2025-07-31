@@ -1,0 +1,19 @@
+# أوامر Git لرفع المشروع
+
+# 1. تهيئة Git في المجلد
+git init
+
+# 2. إضافة جميع الملفات
+git add .
+
+# 3. إنشاء أول commit
+git commit -m "إضافة نظام الإدارة الكامل"
+
+# 4. ربط المجلد بـ GitHub (استبدل USERNAME بالاسم الحقيقي)
+git remote add origin https://github.com/USERNAME/management-system.git
+
+# 5. رفع الملفات
+git branch -M main
+git push -u origin main
+
+# ملاحظة: ستحتاج لإدخال اسم المستخدم وكلمة المرور أو Personal Access Token

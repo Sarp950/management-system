@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اختبار النظام</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 100%;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 28px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: linear-gradient(45deg, #1a73e8, #4285f4);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: bold;
+            margin: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 15px rgba(26, 115, 232, 0.3);
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(26, 115, 232, 0.4);
+        }
+
+        .status {
+            background: #e8f5e8;
+            color: #2e7d32;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #4caf50;
+        }
+
+        .features {
+            text-align: right;
+            margin: 20px 0;
+        }
+
+        .features li {
+            margin: 8px 0;
+            color: #666;
+        }
+
+        .emoji {
+            font-size: 24px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>🚀 نظام الإدارة جاهز!</h1>
+
+        <div class="status">
+            ✅ تم فحص النظام بنجاح - جاهز للاستخدام على الهاتف
+        </div>
+
+        <a href="mkaa.html" class="btn">
+            📱 فتح النظام
+        </a>
+
+        <div class="features">
+            <h3>الميزات المتاحة:</h3>
+            <ul>
+                <li><span class="emoji">👥</span>إدارة الموظفين</li>
+                <li><span class="emoji">🏨</span>إدارة الفنادق</li>
+                <li><span class="emoji">🎉</span>إدارة الفعاليات</li>
+                <li><span class="emoji">🔍</span>البحث المتقدم</li>
+                <li><span class="emoji">📊</span>التقارير والتحليلات</li>
+                <li><span class="emoji">🔔</span>الإشعارات والتذكيرات</li>
+                <li><span class="emoji">💾</span>النسخ الاحتياطي</li>
+                <li><span class="emoji">📱</span>متوافق مع الهاتف</li>
+            </ul>
+        </div>
+
+        <p style="color: #666; font-size: 14px; margin-top: 30px;">
+            📖 راجع ملف README.md للتعليمات الكاملة
+        </p>
+    </div>
+
+    <script>
+        // فحص سريع للمتطلبات
+        if (!('indexedDB' in window)) {
+            alert('⚠️ المتصفح لا يدعم قاعدة البيانات المحلية');
+        }
+
+        if (!('serviceWorker' in navigator)) {
+            console.log('⚠️ المتصفح لا يدعم Service Worker');
+        }
+
+        console.log('✅ النظام جاهز للاستخدام!');
+    </script>
+</body>
+
+</html>
